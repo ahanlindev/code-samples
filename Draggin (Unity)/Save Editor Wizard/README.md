@@ -1,6 +1,6 @@
 ﻿# Save Editor Wizard
 
-This sample is a save editor tool I wrote for Draggin. As the game grew in complexity, and we introduced content that would be gated behind specific progression challenges, it became clear that we would need a simple way of adjusting the game's save files. This ability significantly sped up the rate at which we could prototype and debug new features.
+As Draggin grew in complexity, we introduced content that is gated behind specific progression challenges. It then became clear that we would need a simple way of adjusting the game's save files. To satisfy this need I built this tool. This save editor has significantly sped up the rate at which we can prototype and debug new features.
 
 ## Structure
 
@@ -44,7 +44,7 @@ Once the save data has been updated to the desires of the user, they can click t
 
 ## Areas for Improvement
 
-While this tool has streamlined our workflow significantly, it has limitations. In this section I will describe a few aspects of the Save Editor Wizard that could be iterated upon to produce an even more useful tool. 
+While this tool has streamlined our workflow significantly, it has limitations and can be iterated upon to produce an even more useful tool. 
 
 ### Ambiguous Cosmetic and Challenge Workflow
 

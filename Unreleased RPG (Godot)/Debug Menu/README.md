@@ -14,7 +14,7 @@ To accomplish these requirements, I created a debug overlay scene that is attach
 
 When approaching the request to allow disabling enemy encounters, I wanted to provide a solution that would accommodate future needs. For that reason, I generalized this functionality into the debug flag system described below for flexibility. 
 
-The client was impressed with this debug system and has informed me that it has streamlined his debugging and QA processes greatly.
+The client was satisfied with this debug system and has informed me that it has helped considerably in his debugging and QA processes.
 
 ### All content below this point is the documentation provided to my client
 
