@@ -25,10 +25,10 @@ The debug system consists of a singleton Debug Manager and a debug menu overlay.
 
 # Debug Manager
 
-| Relevant Scripts  | Relevant Scenes     |
-|-------------------|---------------------|
-| `DebugManager.gd` | `DebugManager.tscn` |
-|                   | `DebugMenu.tscn`    |
+| Relevant Scripts                     | Relevant Scenes                          |
+|--------------------------------------|------------------------------------------|
+| [DebugManager.gd](./DebugManager.gd) | [DebugManager.tscn](./DebugManager.tscn) |
+|                                      | [DebugMenu.tscn](./DebugMenu.tscn)       |
 
 The Debug Manager scene is the parent of the debug menu, and acts as the source-of-truth for debug information. The DebugManager class has control over the following:
 
@@ -92,11 +92,11 @@ func takeDamage(dmg: int):
 
 
 # Game Data
-| Relevant Scripts               | Relevant Scenes                  |
-|--------------------------------|----------------------------------|
-| `DebugGameStackDisplay.gd`     | `DebugGameStackDisplay.tscn`     |
-| `DebugPlayerDataController.gd` | `DebugPlayerDataController.tscn` |
-| `DebugPlayerDataDisplay.gd`    | `DebugPlayerDataDisplay.tscn`    |
+| Relevant Scripts                                                        | Relevant Scenes                               |
+|-------------------------------------------------------------------------|-----------------------------------------------|
+| [DebugGameStackDisplay.gd](./GameData/DebugGameStackDisplay.gd)         | [DebugGameStackDisplay.tscn](./GameData/DebugGameStackDisplay.tscn)     |
+| [DebugPlayerDataController.gd](./GameData/DebugPlayerDataController.gd) | [DebugPlayerDataController.tscn](./GameData/DebugPlayerDataController.tscn) |
+| [DebugPlayerDataDisplay.gd](./GameData/DebugPlayerDataDisplay.gd)       | [DebugPlayerDataDisplay.tscn](./GameData/DebugPlayerDataDisplay.tscn)    |
 
 
 The Game Data page of the debug menu consists of scenes that track the game’s state and player state
@@ -130,10 +130,10 @@ The display then checks for changes to player information in `_process`, and pri
 
 
 # Options
-| Relevant Scripts      | Relevant Scenes         |
-|-----------------------|-------------------------|
-| `DebugOptionsMenu.gd` | `DebugOptionsMenu.tscn` |
-| `DebugToggle.gd`      | `DebugToggle.tscn`      |
+| Relevant Scripts                                     | Relevant Scenes                                          |
+|------------------------------------------------------|----------------------------------------------------------|
+| [DebugOptionsMenu.gd](./Options/DebugOptionsMenu.gd) | [DebugOptionsMenu.tscn](./Options/DebugOptionsMenu.tscn) |
+| [DebugToggle.gd](./Options/DebugToggle.gd)           | [DebugToggle.tscn](./Options/DebugToggle.tscn)           |
 
 
 The Options page of the debug menu displays and allows updates to the DebugManager’s debug flags. At time of writing only boolean flags are supported, though number/string/more complex behavior could be added in the future
