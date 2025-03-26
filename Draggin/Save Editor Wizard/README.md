@@ -52,7 +52,7 @@ The greatest weakness of this save editor is the coexistence of the directly ser
 
 One option would be to stop exposing the cached save data object, and instead create a GUI field for each of the data object's fields, mapping the string IDs to their associated asset. This solution would fix the ambiguity, but would be more fragile to changes in the structure of the save data object and would require more overhead when loading the save data from disk, as it would need to find the appropriate assets to map against each string ID in the list.
  
-### Filepath rigidity
+### File Path Rigidity
 
 The game currently has a fixed relative path that it attempts to read save data from. The Save Editor Wizard follows this path when reading and writing save data. This has worked well for existing use cases, but further flexibility could be added by making save and load paths configurable.
 
