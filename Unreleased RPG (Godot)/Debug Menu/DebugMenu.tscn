@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://lg5sc1usdo7p"]
+
+[ext_resource type="Theme" uid="uid://nqnk0wqa1r2c" path="res://Debug/Styles/debug_ui_theme.tres" id="1_dy2u8"]
+[ext_resource type="PackedScene" uid="uid://dsieywqfw24ao" path="res://Debug/GameData/DebugPlayerDataController.tscn" id="3_7qth7"]
+[ext_resource type="PackedScene" uid="uid://c8y5aqhov86aj" path="res://Debug/GameData/DebugGameStackDisplay.tscn" id="3_g3u84"]
+[ext_resource type="PackedScene" uid="uid://bfeflwn3owfns" path="res://Debug/Options/DebugOptionsMenu.tscn" id="4_yyk52"]
+
+[node name="DebugMenu" type="TabContainer"]
+offset_right = 1152.0
+offset_bottom = 617.0
+size_flags_horizontal = 3
+theme = ExtResource("1_dy2u8")
+current_tab = 1
+tab_focus_mode = 0
+
+[node name="Game Data" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Columns" type="HBoxContainer" parent="Game Data"]
+layout_mode = 2
+
+[node name="Game Stack Display" parent="Game Data/Columns" instance=ExtResource("3_g3u84")]
+layout_mode = 2
+
+[node name="Player Data Displays" parent="Game Data/Columns" instance=ExtResource("3_7qth7")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Options" type="MarginContainer" parent="."]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Menu" parent="Options" instance=ExtResource("4_yyk52")]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[editable path="Game Data/Columns/Game Stack Display"]

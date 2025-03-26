@@ -1,0 +1,12 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://nqnk0wqa1r2c"]
+
+[ext_resource type="StyleBox" uid="uid://bkn6q2at6f6mf" path="res://Debug/Styles/debug_panel_container_style.tres" id="1_sif7r"]
+
+[resource]
+default_font_size = 16
+BoxContainer/constants/separation = 8
+MarginContainer/constants/margin_bottom = 8
+MarginContainer/constants/margin_left = 8
+MarginContainer/constants/margin_right = 8
+MarginContainer/constants/margin_top = 8
+PanelContainer/styles/panel = ExtResource("1_sif7r")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfeflwn3owfns"]
+
+[ext_resource type="Theme" uid="uid://nqnk0wqa1r2c" path="res://Debug/Styles/debug_ui_theme.tres" id="1_u4wg7"]
+[ext_resource type="Script" path="res://Debug/Options/DebugOptionsMenu.gd" id="2_7rxow"]
+[ext_resource type="PackedScene" uid="uid://b0vyldto5hl72" path="res://Debug/Options/DebugToggle.tscn" id="3_w66yi"]
+
+[node name="DebugOptions" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 0
+theme = ExtResource("1_u4wg7")
+script = ExtResource("2_7rxow")
+_toggleTemplate = ExtResource("3_w66yi")
+
+[node name="Toggles" type="VBoxContainer" parent="."]
+layout_mode = 2

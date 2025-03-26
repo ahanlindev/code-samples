@@ -1,0 +1,95 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdnq7ru8oota6"]
+
+[ext_resource type="Script" path="res://Debug/GameData/DebugPlayerDataDisplay.gd" id="1_b1s3b"]
+[ext_resource type="LabelSettings" uid="uid://cojushbpj57gk" path="res://Debug/Styles/debug_label_title_1.tres" id="2_cof8j"]
+[ext_resource type="Theme" uid="uid://nqnk0wqa1r2c" path="res://Debug/Styles/debug_ui_theme.tres" id="3_mjtyf"]
+
+[node name="DebugPlayerDataDisplay" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 0
+theme = ExtResource("3_mjtyf")
+script = ExtResource("1_b1s3b")
+
+[node name="Data" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Title" type="Label" parent="Data"]
+layout_mode = 2
+text = "Player Data"
+label_settings = ExtResource("2_cof8j")
+
+[node name="ControllerNum" type="HBoxContainer" parent="Data"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Data/ControllerNum"]
+layout_mode = 2
+text = "Controller Number: "
+
+[node name="Text" type="Label" parent="Data/ControllerNum"]
+layout_mode = 2
+text = "###"
+
+[node name="ControllerName" type="HBoxContainer" parent="Data"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Data/ControllerName"]
+layout_mode = 2
+text = "Controller Name: "
+
+[node name="Text" type="Label" parent="Data/ControllerName"]
+layout_mode = 2
+text = "###"
+
+[node name="RosterNum" type="HBoxContainer" parent="Data"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Data/RosterNum"]
+layout_mode = 2
+text = "Roster Number: "
+
+[node name="Text" type="Label" parent="Data/RosterNum"]
+layout_mode = 2
+text = "###"
+
+[node name="PlayerName" type="HBoxContainer" parent="Data"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Data/PlayerName"]
+layout_mode = 2
+text = "Player Name: "
+
+[node name="Text" type="Label" parent="Data/PlayerName"]
+layout_mode = 2
+text = "###"
+
+[node name="PlayerHP" type="HBoxContainer" parent="Data"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Data/PlayerHP"]
+layout_mode = 2
+text = "Player HP: "
+
+[node name="Text" type="Label" parent="Data/PlayerHP"]
+layout_mode = 2
+text = "###"
+
+[node name="StateStack" type="VBoxContainer" parent="Data"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Data/StateStack"]
+layout_mode = 2
+text = "State Stack:"
+
+[node name="Panel" type="PanelContainer" parent="Data/StateStack"]
+z_index = 9
+layout_mode = 2
+theme = ExtResource("3_mjtyf")
+
+[node name="Text" type="Label" parent="Data/StateStack/Panel"]
+layout_mode = 2
+text = "[Stack Data]"
