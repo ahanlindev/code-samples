@@ -80,7 +80,7 @@ Upon adding the new enum value and running the game, you should notice the new f
 
 ![add_flags.png](ReadmeScreenshots/add_flags.png)
 
-2. Once you have created the new flag, you can access it via the DebugManager’s `get_flag` method at the appropriate spot in your code. <b>Note that when doing this, it will always return false in a non-debug build.</b>!
+2. Once you have created the new flag, you can access it via the DebugManager’s `get_flag` method at the appropriate spot in your code. <b>Note that when doing this, it will always return false in a non-debug build.</b>
 
 ```gdscript
 func takeDamage(dmg: int):
